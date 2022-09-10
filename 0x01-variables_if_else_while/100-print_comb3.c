@@ -1,39 +1,35 @@
 #include <stdio.h>
 
-#include <stdlib.h>
-
-
-
 /**
- *  * main - prints all possible combinations of 2 digits
- *
- *   * Return: 0
- *
- */
-
+ *  * main - Entry point
+ *   *
+ *    * Return: Always 0 (Success)
+ *     */
 int main(void)
-
 {
+		int d = 48, a = 48;
 
-		int i, j;
-
-
-
-		for (i = 0; i <= 9; i++)
+		while (d < 58)
 		{
-			for (j = 0; j <= 9; j++)
-				if (i == j || i > j)
-																					continue;
-				putchar(i + '0');
-				putchar(j + '0');
-				if ((i + j) != 17)
+			a = 48;
+			while (a < 58)
+			{
+				if (d != a && d < a)
 				{
-				putchar(',');
-																				putchar(' ');
-																				}
-			}
+					putchar(d);
+					putchar(a);
+
+					if (!(d == 56 && a == 57))
+					{
+						
+						putchar(',');
+						putchar(' ');
+					}							}
+				a++;							}
+			d++;
 		}
 		putchar('\n');
-		return (0);
 
+		return (0);
 }
+
