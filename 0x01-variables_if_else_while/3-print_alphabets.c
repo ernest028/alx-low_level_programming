@@ -26,11 +26,12 @@ int main(void)
 		if (letter == 'z')
 		{
 																			letter = 'A';
-																		for (; letter <= 'Z'; letter++)
+			for (; letter <= 'Z'; letter++)
 																			{
 																				putchar(letter);
+
 																			}
-																				break;
+																		break;
 																		}
 	}
 
