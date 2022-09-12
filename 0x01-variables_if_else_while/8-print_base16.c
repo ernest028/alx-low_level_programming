@@ -21,13 +21,14 @@ int main(void)
 
 		for (number = 0, number < 10, number++)
 		{
-			putchar(number '0');
+			putchar((num % 10) + '0');
 		}
 
-		for (ch = a, ch < g, ch++)
+		for (ch = 'a', ch < 'g', ch++)
 		{
 			putchar(ch)
 		}
+		putchar('\n');
 		return (0);
 
 }
