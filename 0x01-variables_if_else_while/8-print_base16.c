@@ -17,16 +17,16 @@ int main(void)
 
 		int number;
 
-		char ch
+		char ch;
 
-		for (number = 0, number < 10, number++)
+		for (number = 0; number < 10; number++)
 		{
 			putchar((num % 10) + '0');
 		}
 
-		for (ch = 'a', ch < 'g', ch++)
+		for (ch = 'a'; ch < 'g'; ch++)
 		{
-			putchar(ch)
+			putchar(ch);
 		}
 		putchar('\n');
 		return (0);
