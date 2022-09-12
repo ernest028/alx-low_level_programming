@@ -17,19 +17,17 @@ int main(void)
 
 		int number;
 
+		char ch
 
-		for (number = 0, number < 10, number++);
+		for (number = 0, number < 10, number++)
 		{
-		putchar ('number');
+			putchar(number '0');
 		}
-		for (number = 10, number < 16, number ++);
+
+		for (ch = a, ch < g, ch++)
 		{
-			if(number = 10);
-			{
-			putchar (a);
-			}
+			putchar(ch)
 		}
-		putchar('\n');
 		return (0);
 
 }
