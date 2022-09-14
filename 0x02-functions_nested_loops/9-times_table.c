@@ -47,7 +47,7 @@ void times_table(void)
 				_putchar(' ');
 				_putchar(product + 48);
 			}
-			}	
+			}
 				_putchar('\n');
 		}
 
