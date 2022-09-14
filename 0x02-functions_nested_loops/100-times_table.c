@@ -1,50 +1,50 @@
-#include <stdio.h>
-
-
+#include "main.h"
 
 /**
- *  * main - print largest prime factor of 612852475143
- *
- *   *
- *
- *    * Return: Always 0 (Success)
- *
+ * * print_times_table - prints time table
+ * * @n : use in times table
+ * * Return:void
  */
 
-
-
-int main(void)
-
+void print_times_table(int n)
 {
+	int a = 0, rep, b;
 
-	unsigned long num = 612852475143;
+	if (n < 0 || n > 15)
+		return;
 
-	unsigned long divisor = 2;
-
-
-
-	while (divisor < num)
-
+	while (a <= n)
 	{
-
-		if (num % divisor == 0)
-
+		for (b = 0; b <= n; b++)
 		{
-
-			num /= divisor;
-
-			divisor = 2;
-
+			rep = a * b;
+			if (b == 0)
+				_putchar('0' + rep);
+			else if (rep < 10)
+			{
+				_putchar(' ');
+				_putchar(' ');
+				_putchar('0' + rep);
+			}
+			else if (rep < 100)
+			{
+				_putchar (' ');
+				_putchar('0' + rep / 10);
+				_putchar('0' + rep % 10);
+			}
+			else
+			{
+				_putchar('0' + rep / 100);
+				_putchar('0' + (rep - 100) / 10);
+				_putchar('0' + rep % 10);
+			}
+			if (b < n)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
-
-		else
-
-			divisor++;
-
+		_putchar('\n');
+		a++;
 	}
-
-	printf("%lu\n", num);
-
-	return (0);
-
 }
