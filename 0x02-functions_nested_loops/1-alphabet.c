@@ -13,19 +13,18 @@
  *
  * * Return: no return
  */
-
-
-
 void print_alphabet(void)
 
 {
 
-		char letter = 'a';
+		char ch = 'a';
 
-		for (letter = 'a'; letter <= 'z'; letter++)
-		{
-			_putchar(letter);
-		}
-			_putchar('\n');
+
+
+			for (ch = 'a'; ch <= 'z'; ch++)
+			{
+				_putchar(ch);
+			}
+				_putchar('\n');
 
 }
