@@ -7,11 +7,9 @@
  *
  *     * @s: pointer to input string
  *
- *      * @accept: pointer to string we
+ *      * @accept:string to match
  *
- *       *searching for in @s
- *
- *	*Return: pointer to the bytes in @s
+ *      *Return: pointer to the bytes in @s
  *
  *	or NULL if no such byte is found
  */
