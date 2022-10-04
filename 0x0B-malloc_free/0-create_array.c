@@ -16,7 +16,7 @@
  *       * Return: If size == 0 or the function fails - NULL.
  *
  *        *         Otherwise - a pointer to the array.
- i*/
+ */
 
 char *create_array(unsigned int size, char c)
 {
