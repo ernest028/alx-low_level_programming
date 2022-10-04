@@ -3,18 +3,17 @@
 #include <stdlib.h>
 
 /**
-  * create_array - creates an array of chars and initializes
-  *                it with a specific char.
+  * create_array - create an array of characters and
   *
-  *                 *
+  *  * initializes it with a specific char.
   *
-  *                  * @size: array size
+  *   * @size: The size of the array to be initialized.
   *
-  *                   * @c: char to initialize array with
+  *    * @c: The specific char to intialize the array with.
   *
-  *                    *
+  *     * Return: If size == 0 or the function fails - NULL.
   *
-  *                     * Return: @a
+  *      * Otherwise - a pointer to the array.
   */
 
 char *create_array(unsigned int size, char c)
