@@ -5,11 +5,10 @@
  *
  *                          at a given position
  *
- *    * @head : pointer to the head of the list
+ *    * @head : points to the head of the list
  *
- *     * @idx  : index of the list where the new node will be added
+ *     * @idx  : index of the list where addittion will occur
  *
- *         (indices start at 0)
  *
  *       * @n    : value for the new node to be added
  *
